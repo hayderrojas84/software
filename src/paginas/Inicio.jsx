@@ -6,32 +6,16 @@ const About= () => {
     return (
         <div className="hero">
 
-<br/> <br/> 
-<section class="cd-intro">
-   <h1 class="cd-headline rotate-1">
-      <span class="cd-words-wrapper">
-         <b class="is-visible">Ubicados en la ciudad de Mocoa</b>
-      </span>
-   </h1>
-</section>
+<br/>  
 
-<section class="cd-intro">
-   <h1 class="cd-headline rotate">
-      <span class="cd-words-wrapper">
-         <b class="is-visible">Especificamente en el barrio Obrero</b>
-      </span>
-   </h1>
-</section> 
-<br/> 
+<h1 className="tituloinicio"> UBICADOS EN LA CIUDAD DE MOCOA</h1>
+<h1 className="subtituloinicio"> Especificamente en el barrio Obrero</h1>
+<h1 className="subtituloinicio1"> Cll 16 # 15-16</h1>
+<br/><br/> 
 <Cardsm />
-
-    
-        
-        <h5 class="card-title display-3 fw-bolder mb-0"> <center><font color="white">“No hay límites para lo que puedes lograr en Power House”</font></center>
-  </h5> <br/> 
-        <p class="card-text lead fs-2"> <center><font color="white">Cll 16 # 15-16</font></center></p>
-
-    
+<br/> 
+<h1 className="subtituloinicio2">“No hay límites para lo que puedes lograr en Power House”</h1>
+ <br/> 
       </div>
 
 

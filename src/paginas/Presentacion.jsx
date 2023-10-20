@@ -1,38 +1,22 @@
-
+import pesa from "../assetsm/pesa.png"
 const Presentacion = () => {
     const imagen123 = "";
 
     return (
       
   <section >
-         <br/> 
-         <br/> 
-         <h1 className="titulo"> BIENVENIDO AL GIMNASIO </h1>
-         <h1 className="titulo">POWER HOUSE</h1>
 
-       <p class="card-text lead fs-2" className="textoIII"><font color="white">Tu destino para una vida más saludable y activa</font></p>
 
-           <div className="imagen123">
-        <img alt="o" src={imagen123} height="500px" width="500px" />
-      </div>
-      <h2 class="card-title display-3 fw-bolder mb-0" className="textop"><font color="white">En Gimnasio Power House, estamos dedicados a ayudarte a lograr tus objetivos de acondicionamiento físico y bienestar. Nuestro gimnasio ofrece una amplia gama de servicios y comodidades para tu beneficio.</font></h2>
-  
+         <h1 className="titulo"> BIENVENIDO A GIMNASIO POWER HOUSE </h1>
+         <h1 className="subtitulo">Tu destino para una vida más saludable y activa</h1>
+
+        <div className="pesas"><img alt="b"src= {pesa} height="600px" width="600px"  /> </div>
+
+       <h1 className="subtitulo2">Estamos dedicados a ayudarte a lograr tus objetivos de acondicionamiento físico y bienestar</h1>
+       <h1 className="subtitulo2">Ofrecemos una amplia gama de servicios y comodidades para tu beneficio</h1>
     </section>
         
   
     );
   };
   export default Presentacion;
-
-  /*<section className="presentacion" style={{ textAlign: "left" }}>
-      <h1 className="titulo">BIENVENIDO A GIMNASIO POWER HOUSE</h1>
-      <p className="card-text lead fs-2" style={{ color: "white", textAlign: "left" }}>
-        Tu destino para una vida más saludable y activa
-      </p>
-      <div className="imagen123">
-        <img src={gymImage} alt="Gimnasio" height="500" width="500" />
-      </div>
-      <h2 className="card-title display-3 fw-bolder text-white" style={{ textAlign: "left" }}>
-        En Gimnasio Power House, estamos dedicados a ayudarte a lograr tus objetivos de acondicionamiento físico y bienestar. Nuestro gimnasio ofrece una amplia gama de servicios y comodidades para tu beneficio.
-      </h2>
-    </section>*/

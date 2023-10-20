@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Simulación de una base de datos de ejercicios
 const exerciseDatabase = [
   {
     id: 1,
@@ -25,12 +24,12 @@ const App = () => {
   const [formData, setFormData] = useState({
     name: '',
     age: '',
-    gender: '',
-    fitnessLevel: '',
+    gender: 'male',
+    fitnessLevel: 'beginner',
   });
 
   const [routine, setRoutine] = useState([]);
-  const [availableExercises, setAvailableExercises] = useState(exerciseDatabase);
+  const [availableExercises] = useState(exerciseDatabase);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,22 +37,32 @@ const App = () => {
   };
 
   const generateRoutine = () => {
-    // Implementar lógica para generar una rutina equilibrada basada en la base de datos de ejercicios y datos del usuario
-    // Puedes utilizar algoritmos para seleccionar ejercicios de manera inteligente
+    const userGender = formData.gender;
+    const userFitnessLevel = formData.fitnessLevel;
 
-    // Ejemplo simple: selecciona aleatoriamente 3 ejercicios
+    // Filtrar ejercicios basados en género y nivel de condición física
+    const filteredExercises = availableExercises.filter(
+      (exercise) =>
+        (exercise.muscleGroup === 'Pecho' && userGender === 'male') ||
+        (exercise.muscleGroup === 'Piernas' && userGender === 'female') ||
+        exercise.muscleGroup !== 'Pecho' ||
+        (exercise.muscleGroup !== 'Piernas' && userFitnessLevel !== 'beginner')
+    );
+
+    // Elegir ejercicios de forma más inteligente, en este caso solo se eligen 3 al azar
     const selectedExercises = [];
     for (let i = 0; i < 3; i++) {
-      const randomIndex = Math.floor(Math.random() * availableExercises.length);
-      selectedExercises.push(availableExercises[randomIndex]);
+      const randomIndex = Math.floor(Math.random() * filteredExercises.length);
+      selectedExercises.push(filteredExercises[randomIndex]);
+      filteredExercises.splice(randomIndex, 1);
     }
 
     setRoutine(selectedExercises);
   };
 
   return (
-    <div className="App">
-      <h1>Generador de Rutinas Diarias</h1>
+    <div className="titulorutina">
+      <p>EN ESTA SECCIÓN PODRAS GENERAR TU RUTINA DIARIA</p>
       <form>
         <label>
           Nombre:
@@ -85,25 +94,24 @@ const App = () => {
       <button onClick={generateRoutine}>Generar Rutina</button>
 
       <div>
-        <h2>Rutina Diaria</h2>
-        {routine.length > 0 ? (
-          <ul>
-            {routine.map((exercise) => (
-              <li key={exercise.id}>
-                <strong>{exercise.name}</strong> - {exercise.description}.{' '}
-                Recomendado: {exercise.recommendedSets} series de {exercise.recommendedReps} repeticiones.
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>¡Genera tu rutina!</p>
-        )}
-      </div>
+  {routine.length > 0 ? (
+    <ul>
+      {routine.map((exercise) => (
+        exercise && (
+          <li key={exercise.id}>
+            <strong>{exercise.name}</strong> - {exercise.description}.{' '}
+            Recomendado: {exercise.recommendedSets} series de {exercise.recommendedReps} repeticiones.
+          </li>
+        )
+      ))}
+    </ul>
+  ) : (
+    <p>¡Genera tu rutina!</p>
+  )}
+</div>
+
     </div>
   );
 };
 
 export default App;
-
-
-
