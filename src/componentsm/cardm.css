@@ -1,0 +1,41 @@
+.cardm:hover {
+ 
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #f8f7f7;
+  -webkit-box-shadow: 0px 0px 15px 15px #fefefe;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.cardm-body {
+  padding: 2rem 0 !important;
+
+ 
+}
+
+.cardm-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+ 
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.cardm-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  max-width:300px;
+  margin-bottom: 30px;
+  max-height:300px;
+  width:300px;
+
+
+
+
+
+}
+
+

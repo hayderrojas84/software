@@ -1,0 +1,364 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: hwb(0 100% 0%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: rgb(250, 250, 250);
+}
+
+
+.textoI {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 30px;
+  justify-content: center;
+
+  
+}
+.textoII{
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  color: rgb(6, 5, 5);
+  font-size: 1.5rem;
+  padding: 30px;
+  justify-content: center;
+  
+}
+
+
+.menut {
+  background-color: rgb(236, 230, 230);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  overflow: hidden;
+
+}
+
+.power {
+  background-color: rgb(236, 230, 230);
+  text-align: center;
+}
+
+.section {
+ padding: 60px 4;
+ width: 90%;
+ max-width: 1000%;
+ margin: auto;
+ overflow: hidden;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.h2 {
+  color: hsla(0, 0%, 0%, .9);
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.imagen1 {
+  text-align: center;
+}
+
+.imagen123 {
+  text-align: center;
+}
+
+
+
+.imagenh {
+  text-align: center;
+  background-clip: border-box;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 600;
+  
+
+}
+.face {
+  outline: none;
+  text-decoration: none;
+ 
+}
+.carta {
+  text-align: center;
+}
+
+.fc {
+  font-weight: bold;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  font-size: 150%;
+  font-style: italic;
+}
+.fa {
+  outline: none;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+ 
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  }
+
+
+  .titulo {
+    display: inline-block;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 70px; 
+    text-shadow: .03em .03em 0 rgb(247, 18, 18);
+    }
+
+
+  .cd-headline.rotate-1 {
+    text-align:center;
+    font-style: italic;
+    font-size: 70px;
+  }
+
+  .cd-headline.rotate-1 .cd-words-wrapper {
+    color: white;
+    display: inline-block;
+    perspective: 300px;
+  }
+  .cd-headline.rotate-1 b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .cd-headline.rotate-1 b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  .cd-headline.rotate-1 b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .cd-headline.rotate-1 b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+    animation: cd-rotate-1-in 1.2s;
+  }
+  
+  .cd-headline.rotate-1 b.is-hidden {
+    transform: rotateX(180deg);
+    animation: cd-rotate-1-out 1.2s;
+  }
+  @keyframes cd-rotate-1-in {
+    0% {
+      transform: rotateX(180deg);
+      opacity: 0;
+    }
+    35% {
+      transform: rotateX(120deg);
+      opacity: 0;
+    }
+    65% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(360deg);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cd-rotate-1-out {
+    0% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    35% {
+      transform: rotateX(-40deg);
+      opacity: 1;
+    }
+    65% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(180deg);
+      opacity: 0;
+    }
+  }
+
+  .cd-headline.rotate {
+    text-align:center;
+    font-style: italic;
+    font-size: 35px;
+  }
+
+  .cd-headline.rotate .cd-words-wrapper {
+    color: white;
+    display: inline-block;
+    perspective: 300px;
+  }
+  .cd-headline.rotate b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .cd-headline.rotate b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  .cd-headline.rotate b {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: rotateX(180deg);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .cd-headline.rotate b.is-visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0deg);
+    animation: cd-rotate-in 1.2s;
+  }
+  
+  .cd-headline.rotate b.is-hidden {
+    transform: rotateX(180deg);
+    animation: cd-rotate-out 1.2s;
+  }
+  @keyframes cd-rotate-in {
+    0% {
+      transform: rotateX(180deg);
+      opacity: 0;
+    }
+    35% {
+      transform: rotateX(120deg);
+      opacity: 0;
+    }
+    65% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(360deg);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cd-rotate-out {
+    0% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    35% {
+      transform: rotateX(-40deg);
+      opacity: 1;
+    }
+    65% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(180deg);
+      opacity: 0;
+    }
+  }
+
+  .h8{
+    
+    color: #fff;
+    font-size: 77px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 
+      0 1px 0 #ccc, 
+      0 2px 0 #c9c9c9, 
+      0 3px 0 #bbb, 
+      0 4px 0 #b9b9b9, 
+      0 5px 0 #aaa, 
+      0 6px 1px rgba(244, 241, 241, 0.1), 
+      0 0 5px rgba(0,0,0,.1), 
+      0 1px 3px rgba(0,0,0,.3), 
+      0 3px 5px rgba(0,0,0,.2), 
+      0 5px 10px rgba(0,0,0,.25), 
+      0 10px 10px rgba(0,0,0,.2), 
+      0 20px 20px rgba(0,0,0,.15);
+  }
+  
+  .x{
+    text-transform:uppercase;
+    font-size:72px;
+    font-family:'Verdana';
+    padding:30px;
+  }
+  
+  .imagen123456:hover {filter: opacity(.5);}
+
+  .cartita:hover{
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);}
+.cartita {
+  overflow:hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+  

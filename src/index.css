@@ -1,0 +1,11 @@
+body {
+  height:1200px;
+  background-image: url("https://sienttfuerte.com/wp-content/uploads/2018/07/fondo-gym.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
