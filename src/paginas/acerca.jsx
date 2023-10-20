@@ -5,7 +5,7 @@ const Redes = () => {
   const facebook="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png"
 
   const whatsapp="https://es.logodownload.org/wp-content/uploads/2018/10/whatsapp-logo-11.png"
-  const mere="https://i.pinimg.com/originals/a5/fa/6e/a5fa6e1127a3fef4b7654c98b1090697.png"
+  const mere=""
   
   return (
       <div className="imagenh">
