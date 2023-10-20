@@ -26,15 +26,12 @@ const Navbar = () => {
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-                      <Link className="fc" to="inicio"href="#"><font color="white">Informaciòn</font></Link>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <Link className="fc" to="fin"href="#"><font color="white">Productos</font></Link>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                      <Link className="fc" to="inicio"href="#"><font color="white">Información</font></Link>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <Link className="fc" to="fin"href="#"><font color="white">Rutina diaria</font></Link>&nbsp;&nbsp;&nbsp;&nbsp;
                       <Link className="fc" to="acerca"href="#"><font color="white">Contacto</font></Link>&nbsp;&nbsp;&nbsp;&nbsp;
         </li>
 

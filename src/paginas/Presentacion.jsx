@@ -7,14 +7,15 @@ const Presentacion = () => {
   <section >
          <br/> 
          <br/> 
-         <left><h1 className="titulo"> BIENVENIDO A GIMNASIO POWER HOUSE </h1></left>
+         <h1 className="titulo"> BIENVENIDO AL GIMNASIO </h1>
+         <h1 className="titulo">POWER HOUSE</h1>
 
-       <p class="card-text lead fs-2"> <left><font color="white">Tu destino para una vida más saludable y activa</font></left></p>
+       <p class="card-text lead fs-2" className="textoIII"><font color="white">Tu destino para una vida más saludable y activa</font></p>
 
            <div className="imagen123">
         <img alt="o" src={imagen123} height="500px" width="500px" />
       </div>
-      <h2 class="card-title display-3 fw-bolder mb-0"><font color="white">En Gimnasio Power House, estamos dedicados a ayudarte a lograr tus objetivos de acondicionamiento físico y bienestar. Nuestro gimnasio ofrece una amplia gama de servicios y comodidades para tu beneficio.</font></h2>
+      <h2 class="card-title display-3 fw-bolder mb-0" className="textop"><font color="white">En Gimnasio Power House, estamos dedicados a ayudarte a lograr tus objetivos de acondicionamiento físico y bienestar. Nuestro gimnasio ofrece una amplia gama de servicios y comodidades para tu beneficio.</font></h2>
   
     </section>
         

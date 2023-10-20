@@ -89,6 +89,15 @@
 .imagen123 {
   text-align: center;
 }
+.textoIII{
+  text-align: center;
+  font-size: 35px;
+}
+
+.textop{
+  text-align: center;
+  font-size: 50px;
+}
 
 
 
@@ -140,7 +149,7 @@
 
 
   .titulo {
-    display: inline-block;
+    text-align: center;
     color: white;
     font-family: 'Righteous', serif;
     font-size: 70px; 
